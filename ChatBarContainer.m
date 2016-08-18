@@ -177,11 +177,4 @@
     }
 }
 
-- (void)dealloc;
-{
-    [[NSNotificationCenter defaultCenter]removeObserver:self forKeyPath:UIKeyboardWillChangeFrameNotification];
-    [[NSNotificationCenter defaultCenter]removeObserver:self forKeyPath:UIKeyboardWillHideNotification];
-    [[NSNotificationCenter defaultCenter]removeObserver:self forKeyPath:UIKeyboardDidShowNotification];
-}
-
 @end

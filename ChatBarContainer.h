@@ -12,6 +12,7 @@
 
 @protocol ChatBarContainerDelegate <NSObject>
 
+@optional
 - (void)clickSendWithContent:(NSString*)content;
 - (void)chatBarDidBecomeActive;
 - (void)chatBarDidEndEdit;
